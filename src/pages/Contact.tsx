@@ -1,19 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Section from "../components/Section";
 
 const Contact: React.FC = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", { name, email, message });
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
   return (
     <Section title="Contact Me">
       <div className="mx-auto max-w-lg dark:text-gray-300">
