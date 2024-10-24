@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css'; // Import the Tailwind CSS file
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css"; // Import the Tailwind CSS file
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+document.documentElement.classList.add("dark"); // Add this line to enable dark mode
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root"),
 );
 
 // If you want to start measuring performance in your app, pass a function
