@@ -4,10 +4,10 @@ import Section from "../components/Section";
 const About: React.FC = () => {
   return (
     <Section title="About Me">
-      <div className="mx-auto max-w-2xl dark:text-gray-300">
+      <div className="mx-auto max-w-2xl dark:text-gray-300 font-sans">
         <h2 className="mb-4 text-xl font-bold">Phạm Anh</h2>
         <p className="mb-4 leading-relaxed text-gray-800 dark:text-gray-300">
-          Highly skilled .NET Developer with over 9 years of hands-on experience
+          Highly skilled .NET Developer with over 7 years of hands-on experience
           in the complete software development lifecycle, specializing in
           Microsoft .NET Framework and C#. Proficient in designing, developing,
           and deploying scalable, robust, and secure applications. Adapt at

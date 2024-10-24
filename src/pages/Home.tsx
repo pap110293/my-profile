@@ -10,18 +10,19 @@ const Home: React.FC = () => {
   return (
     <Section title="Welcome">
       <div className="text-center dark:text-gray-300">
+        <div className="mb-6 flex justify-center">
+          <img
+            src="https://via.placeholder.com/256"
+            alt={`${MY_NAME}'s avatar`}
+            className="h-32 w-32 rounded-full object-cover shadow-lg sm:h-48 sm:w-48 md:h-64 md:w-64 lg:h-80 lg:w-80"
+          />
+        </div>
         <h1 className="mb-4 text-3xl text-gray-800 dark:text-gray-200">
           Hi, I'm {MY_NAME} ({MY_REAL_NAME})
         </h1>
         <p className="mb-8 text-xl text-gray-600 dark:text-gray-400">
-          .NET Developer with 7 Years of Experience
+          .NET Developer
         </p>
-        <a
-          href="/contact"
-          className="inline-block rounded bg-blue-500 px-6 py-3 text-white transition-colors duration-300 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-500"
-        >
-          Get in Touch
-        </a>
       </div>
       <About />
       <Skills />

@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
 
   return (
     <Section title="Projects">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 font-sans">
         {projects.map((project, index) => (
           <div
             key={index}

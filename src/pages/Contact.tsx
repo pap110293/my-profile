@@ -4,7 +4,7 @@ import Section from "../components/Section";
 const Contact: React.FC = () => {
   return (
     <Section title="Contact Me">
-      <div className="mx-auto max-w-lg dark:text-gray-300">
+      <div className="mx-auto max-w-lg dark:text-gray-300 font-serif">
         <div className="mb-4">
           <span className="font-semibold">Name:</span> Alex (Anh Phạm)
         </div>
@@ -12,7 +12,13 @@ const Contact: React.FC = () => {
           <span className="font-semibold">Phone:</span> (+84) 962202455
         </div>
         <div className="mb-4">
-          <span className="font-semibold">Email:</span> pap110293@gmail.com
+          <span className="font-semibold">Email:</span>{" "}
+          <a
+            href="mailto:pap110293@gmail.com"
+            className="text-blue-500 hover:text-blue-600 transition-colors duration-300"
+          >
+            pap110293@gmail.com
+          </a>
         </div>
         <div className="flex space-x-4">
           <a

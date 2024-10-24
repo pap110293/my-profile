@@ -5,7 +5,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Adjust the paths according to your project structure
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+        roboto: ['"Roboto"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
