@@ -5,15 +5,26 @@ const About: React.FC = () => {
   return (
     <Section title="About Me">
       <div className="max-w-2xl mx-auto">
+        <h2 className="text-xl font-bold mb-4">Phạm Anh</h2>
         <p className="mb-4 leading-relaxed text-gray-800">
-          I am a dedicated .NET developer with over 7 years of experience across the full software development lifecycle. My expertise is centered on designing and delivering robust, scalable applications by leveraging cutting-edge technologies.
+          Highly skilled .NET Developer with over 9 years of hands-on experience in the complete software development lifecycle, specializing in Microsoft .NET Framework and C#. Proficient in designing, developing, and deploying scalable, robust, and secure applications. Adapt at identifying and solving challenges for both domestic and international clients efficiently.
         </p>
-        <p className="mb-4 leading-relaxed text-gray-800">
-          With a strong background in .NET Framework, C#, REST APIs, gRPC, ASP.NET Core, and microservices architecture, I focus on writing clean, maintainable code to address complex business challenges. I thrive on developing solutions that are both efficient and scalable.
-        </p>
-        <p className="mb-4 leading-relaxed text-gray-800">
-          Having worked across multiple industries, I bring a broad perspective to each project, ensuring innovative and tailored approaches. I am committed to continuous learning, staying at the forefront of evolving software development trends and best practices.
-        </p>
+        <h3 className="text-lg font-semibold mb-2">Summary of Skills</h3>
+        <ul className="list-disc list-inside mb-4 text-gray-800">
+          <li>Proficient in Microsoft .NET Framework (.NET Core) and C# with over 9 years of practical experience in software development.</li>
+          <li>Strong expertise in designing and implementing solutions using REST, WebSocket, and gRPC protocols, ensuring efficient communication between services.</li>
+          <li>Proven ability to work effectively in both team environments and as a solo developer when necessary.</li>
+          <li>Skilled in ASP.NET Core and Entity Framework Core, facilitating rapid development and access to .NET applications.</li>
+          <li>Experience with cloud services, including Azure Functions and Azure Cloud.</li>
+          <li>Committed to continuous learning and staying abreast of the latest industry trends and best practices.</li>
+        </ul>
+        <h3 className="text-lg font-semibold mb-2">Strengths</h3>
+        <ul className="list-disc list-inside mb-4 text-gray-800">
+          <li>Attention to detail and precision in requirements.</li>
+          <li>Adaptability and quick learning.</li>
+          <li>Strong problem-solving skills.</li>
+          <li>Focus on perfection, consistently dedicating necessary time and effort to achieve it.</li>
+        </ul>
       </div>
     </Section>
   );

@@ -1,9 +1,12 @@
 import React from 'react';
+import { MY_NAME } from '../constants/constants';
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-100 py-4 text-center absolute bottom-0 w-full">
-      <p className="text-gray-600 text-sm">&copy; 2023 John Doe. All rights reserved.</p>
+    <footer className="bg-gray-100 py-4 text-center bottom-0 w-full">
+      <p className="text-gray-600 text-sm">&copy; {currentYear} {MY_NAME}. All rights reserved.</p>
     </footer>
   );
 };
