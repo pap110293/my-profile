@@ -1,0 +1,5 @@
+export const FULL_NAME = 'Alex'
+export const EMAIL = 'pap110293@gmail.com'
+export const PHONE = '(+84) 962202455'
+export const GITHUB_URL = 'https://github.com/pap110293'
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/anh-pham-251b06148/'
