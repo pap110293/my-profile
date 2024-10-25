@@ -14,7 +14,7 @@ const Navigation: React.FC<NavigationProps> = ({
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-gray-800 shadow-md z-10">
-      <div className="container max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-teal-400">{FULL_NAME}</h1>
         <ul className="hidden md:flex space-x-4">
           {sections.map((section) => (
