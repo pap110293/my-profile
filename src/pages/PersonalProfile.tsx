@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navigation from '../components/Layout/Navigation'
 import Footer from '../components/Layout/Footer'
 import Home from '../components/Sections/Home'
@@ -10,6 +10,32 @@ import { scrollToSection } from '../utils/scrollUtils'
 
 const PersonalProfile: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home')
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '-50% 0px',
+      threshold: 0
+    }
+
+    const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(handleIntersect, options)
+    
+    // Observe all sections
+    const sections = document.querySelectorAll('section[id]')
+    sections.forEach((section) => observer.observe(section))
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section))
+    }
+  }, [])
 
   const handleScrollToSection = (sectionId: string) => {
     scrollToSection(sectionId)
