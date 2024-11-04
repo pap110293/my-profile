@@ -6,7 +6,6 @@ import About from '../components/Sections/About'
 import Skills from '../components/Sections/Skills'
 import Projects from '../components/Sections/Projects'
 import Contact from '../components/Sections/Contact'
-import Experience from '../components/Sections/Experience'
 import { scrollToSection } from '../utils/scrollUtils'
 
 const PersonalProfile: React.FC = () => {
@@ -49,7 +48,6 @@ const PersonalProfile: React.FC = () => {
       <main className="pt-16">
         <Home onLearnMoreClick={() => handleScrollToSection('about')} />
         <About />
-        <Experience />
         <Skills />
         <Projects />
         <Contact />
