@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navigation from '../components/Layout/Navigation'
 import Footer from '../components/Layout/Footer'
 import ExperienceSection from '../components/Sections/Experience'
 
 const Experience: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
       <Navigation activeSection="experience" onSectionClick={() => {}} />
