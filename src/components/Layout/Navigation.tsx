@@ -10,7 +10,7 @@ const Navigation: React.FC<NavigationProps> = ({
   activeSection,
   onSectionClick,
 }) => {
-  const sections = ["home", "about", "skills", "projects", "contact"];
+  const sections = ["home", "about", "experience", "skills", "projects", "contact"];
 
   const handleClick = (sectionId: string) => {
     onSectionClick(sectionId)
