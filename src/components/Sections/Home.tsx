@@ -14,7 +14,7 @@ const Home: React.FC<HomeProps> = ({ onLearnMoreClick }) => (
       <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
         Hi I'm {FULL_NAME}
       </h1>
-      <h2 className="text-2xl md:text-3xl text-blue-800 mb-8">
+      <h2 className="text-2xl md:text-3xl text-blue-900 mb-8">
         A .NET Developer
       </h2>
       <p className="text-xl max-w-2xl mx-auto mb-8 text-gray-600">
@@ -26,7 +26,7 @@ const Home: React.FC<HomeProps> = ({ onLearnMoreClick }) => (
       </p>
       <button
         onClick={onLearnMoreClick}
-        className="bg-blue-800 text-white px-6 py-3 rounded-full hover:bg-blue-900 transition duration-300"
+        className="bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-950 transition duration-300"
       >
         Let you know more about me
       </button>

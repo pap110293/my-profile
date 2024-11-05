@@ -116,7 +116,7 @@ const Experience: FC = () => {
   return (
     <section id="experience" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">
+        <h2 className="text-3xl font-bold mb-8 text-center text-blue-900">
           Professional Experience
         </h2>
 
@@ -127,18 +127,18 @@ const Experience: FC = () => {
               className="max-w-3xl mx-auto bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300"
             >
               <div className="flex flex-col items-center text-center gap-2 mb-4">
-                <h3 className="text-2xl font-semibold text-blue-800">
+                <h3 className="text-2xl font-semibold text-blue-900">
                   {experience.company}
                 </h3>
                 <span className="text-gray-500">{experience.period}</span>
-                <span className="font-medium text-blue-800">
+                <span className="font-medium text-blue-900">
                   {experience.position}
                 </span>
               </div>
 
               <div className="space-y-4 text-left">
                 <div>
-                  <h4 className="font-medium mb-2 text-blue-800">
+                  <h4 className="font-medium mb-2 text-blue-900">
                     Main Responsibilities:
                   </h4>
                   <ul className="list-disc list-inside space-y-1">
@@ -151,14 +151,14 @@ const Experience: FC = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-medium mb-2 text-blue-800">
+                  <h4 className="font-medium mb-2 text-blue-900">
                     Technologies:
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {experience.technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-gray-100 text-blue-800 rounded-full text-sm"
+                        className="px-3 py-1 bg-gray-100 text-blue-900 rounded-full text-sm"
                       >
                         {tech}
                       </span>
@@ -167,7 +167,7 @@ const Experience: FC = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-medium mb-2 text-blue-800">
+                  <h4 className="font-medium mb-2 text-blue-900">
                     Key Achievements:
                   </h4>
                   <ul className="list-disc list-inside space-y-1">

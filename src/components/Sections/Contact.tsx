@@ -10,7 +10,7 @@ import {
 const Contact: React.FC = () => (
   <section id="contact" className="py-20 bg-white">
     <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">
+      <h2 className="text-3xl font-bold mb-8 text-center text-blue-900">
         Contact Me
       </h2>
       <div className="max-w-md mx-auto">
@@ -20,10 +20,10 @@ const Contact: React.FC = () => (
         </p>
         <div className="space-y-4">
           <div className="flex justify-center items-center space-x-2">
-            <Mail size={24} className="text-blue-800" />
+            <Mail size={24} className="text-blue-900" />
             <a
               href={`mailto:${EMAIL}`}
-              className="text-blue-800 hover:text-blue-900"
+              className="text-blue-900 hover:text-blue-950"
               aria-label="Email"
               tabIndex={0}
             >
@@ -31,10 +31,10 @@ const Contact: React.FC = () => (
             </a>
           </div>
           <div className="flex justify-center items-center space-x-2">
-            <Phone size={24} className="text-blue-800" />
+            <Phone size={24} className="text-blue-900" />
             <a
               href={`tel:${PHONE}`}
-              className="text-blue-800 hover:text-blue-900"
+              className="text-blue-900 hover:text-blue-950"
               aria-label="Phone"
               tabIndex={0}
             >
@@ -46,7 +46,7 @@ const Contact: React.FC = () => (
               href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-800 hover:text-blue-900"
+              className="text-blue-900 hover:text-blue-950"
               aria-label="GitHub"
               tabIndex={0}
             >
@@ -56,7 +56,7 @@ const Contact: React.FC = () => (
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-800 hover:text-blue-900"
+              className="text-blue-900 hover:text-blue-950"
               aria-label="LinkedIn"
               tabIndex={0}
             >
