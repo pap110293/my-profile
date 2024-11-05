@@ -19,4 +19,4 @@ const Experience: React.FC = () => {
   )
 }
 
-export default Experience 
+export default Experience

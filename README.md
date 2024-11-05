@@ -1,46 +1,116 @@
-# Getting Started with Create React App
+# Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive personal portfolio website built with React, TypeScript, and TailwindCSS.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- Responsive design
+- Single Page Application (SPA) with React Router
+- Smooth scrolling navigation
+- Interactive UI components
+- Dark theme
+- Section-based layout:
+  - Home
+  - About
+  - Skills
+  - Projects
+  - Experience
+  - Contact
 
-### `npm start`
+## 🛠️ Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 18
+- TypeScript
+- TailwindCSS
+- React Router DOM
+- Lucide React (for icons)
+- Azure Static Web Apps (for deployment)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🏗️ Installation
 
-### `npm test`
+1. Clone the repository:
+   ```bash
+   git clone [your-repository-url]
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application will open in your default browser at [http://localhost:3000](http://localhost:3000).
 
-### `npm run build`
+## 📝 Available Scripts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run format` - Formats code using Prettier
+- `npm run format:check` - Checks code formatting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌐 Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is configured for deployment to Azure Static Web Apps. The deployment workflow is automatically triggered when pushing to the main branch.
 
-### `npm run eject`
+To deploy manually:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+2. The build output will be in the `build` folder, ready for deployment.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+src/
+├── components/
+│ ├── Layout/
+│ │ ├── Navigation.tsx
+│ │ └── Footer.tsx
+│ ├── Sections/
+│ │ ├── Home.tsx
+│ │ ├── About.tsx
+│ │ ├── Skills.tsx
+│ │ ├── Projects.tsx
+│ │ ├── Experience.tsx
+│ │ └── Contact.tsx
+│ ├── ProjectCard.tsx
+│ └── SkillCategory.tsx
+├── pages/
+│ ├── PersonalProfile.tsx
+│ └── Experience.tsx
+├── constants/
+│ └── personalInfo.ts
+├── utils/
+│ └── scrollUtils.ts
+└── App.tsx
+```
+## ⚙️ Configuration
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- TailwindCSS configuration in `tailwind.config.js`
+- TypeScript configuration in `tsconfig.json`
+- Prettier configuration in `.prettierrc`
+- ESLint configuration in `.eslintrc`
 
-## Learn More
+## 🤝 Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 License
+
+This project is licensed under the MIT License.
+This README provides a comprehensive overview of your project, including its features, setup instructions, and project structure. It's based on the actual codebase structure and configuration files present in your project.
+The main references I used from your codebase include:
+Package.json for scripts and dependencies
+Project structure and components
+Configuration files
+Deployment workflow
+I've organized it to be clear and helpful for anyone who wants to understand or contribute to the project.

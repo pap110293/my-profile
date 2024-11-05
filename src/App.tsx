@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PersonalProfile from './pages/PersonalProfile';
-import Experience from './pages/Experience';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import PersonalProfile from './pages/PersonalProfile'
+import Experience from './pages/Experience'
+import './App.css'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         </Routes>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

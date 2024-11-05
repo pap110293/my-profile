@@ -15,7 +15,7 @@ const PersonalProfile: React.FC = () => {
     const options = {
       root: null,
       rootMargin: '-50% 0px',
-      threshold: 0
+      threshold: 0,
     }
 
     const handleIntersect = (entries: IntersectionObserverEntry[]) => {
@@ -27,7 +27,7 @@ const PersonalProfile: React.FC = () => {
     }
 
     const observer = new IntersectionObserver(handleIntersect, options)
-    
+
     // Observe all sections
     const sections = document.querySelectorAll('section[id]')
     sections.forEach((section) => observer.observe(section))
@@ -44,7 +44,10 @@ const PersonalProfile: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
-      <Navigation activeSection={activeSection} onSectionClick={handleScrollToSection} />
+      <Navigation
+        activeSection={activeSection}
+        onSectionClick={handleScrollToSection}
+      />
       <main className="pt-16">
         <Home onLearnMoreClick={() => handleScrollToSection('about')} />
         <About />
