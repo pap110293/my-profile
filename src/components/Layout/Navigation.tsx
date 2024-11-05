@@ -30,9 +30,9 @@ const Navigation: React.FC<NavigationProps> = ({
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-gray-800 shadow-md z-10">
+    <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-10">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-teal-400">
+        <Link to="/" className="text-2xl font-bold text-teal-600">
           {FULL_NAME}
         </Link>
         <ul className="hidden md:flex space-x-4">
@@ -44,8 +44,8 @@ const Navigation: React.FC<NavigationProps> = ({
                 className={`capitalize transition-colors duration-200 ${
                   (isHomePage && activeSection === section.id) ||
                   (!isHomePage && section.path === location.pathname)
-                    ? 'text-teal-400 font-semibold'
-                    : 'text-gray-300 hover:text-teal-400'
+                    ? 'text-teal-600 font-semibold'
+                    : 'text-gray-600 hover:text-teal-600'
                 }`}
                 aria-current={activeSection === section.id ? 'page' : undefined}
               >

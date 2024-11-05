@@ -2,7 +2,7 @@ import React from 'react'
 import SkillCategory from '../SkillCategory'
 
 const Skills: React.FC = () => (
-  <section id="skills" className="py-20 bg-gray-900">
+  <section id="skills" className="py-20 bg-white">
     <div className="container mx-auto px-4">
       <h2 className="text-3xl font-bold mb-8 text-center text-teal-400">
         Skills

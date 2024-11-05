@@ -8,16 +8,16 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ onLearnMoreClick }) => (
   <section
     id="home"
-    className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900"
+    className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100"
   >
     <div className="text-center">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
+      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
         Hi I'm {FULL_NAME}
       </h1>
-      <h2 className="text-2xl md:text-3xl text-teal-400 mb-8">
+      <h2 className="text-2xl md:text-3xl text-teal-600 mb-8">
         A .NET Developer
       </h2>
-      <p className="text-xl max-w-2xl mx-auto mb-8 text-gray-300">
+      <p className="text-xl max-w-2xl mx-auto mb-8 text-gray-600">
         Experienced .NET developer with over 7 years of expertise building
         high-performance backend solutions, with additional frontend skills in
         React. As a dedicated gamer, I enjoy game development as a creative
@@ -26,7 +26,7 @@ const Home: React.FC<HomeProps> = ({ onLearnMoreClick }) => (
       </p>
       <button
         onClick={onLearnMoreClick}
-        className="bg-teal-500 text-gray-900 px-6 py-3 rounded-full hover:bg-teal-400 transition duration-300"
+        className="bg-teal-600 text-white px-6 py-3 rounded-full hover:bg-teal-700 transition duration-300"
       >
         Let you know more about me
       </button>

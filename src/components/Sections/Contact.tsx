@@ -8,22 +8,22 @@ import {
 } from '../../constants/personalInfo'
 
 const Contact: React.FC = () => (
-  <section id="contact" className="py-20 bg-gray-900">
+  <section id="contact" className="py-20 bg-white">
     <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center text-teal-400">
+      <h2 className="text-3xl font-bold mb-8 text-center text-teal-600">
         Contact Me
       </h2>
       <div className="max-w-md mx-auto">
-        <p className="text-center mb-8 text-gray-300">
+        <p className="text-center mb-8 text-gray-600">
           I'm always open to new opportunities and collaborations. Feel free to
           reach out!
         </p>
         <div className="space-y-4">
           <div className="flex justify-center items-center space-x-2">
-            <Mail size={24} className="text-teal-400" />
+            <Mail size={24} className="text-teal-600" />
             <a
               href={`mailto:${EMAIL}`}
-              className="text-teal-400 hover:text-teal-300"
+              className="text-teal-600 hover:text-teal-700"
               aria-label="Email"
               tabIndex={0}
             >
@@ -31,10 +31,10 @@ const Contact: React.FC = () => (
             </a>
           </div>
           <div className="flex justify-center items-center space-x-2">
-            <Phone size={24} className="text-teal-400" />
+            <Phone size={24} className="text-teal-600" />
             <a
               href={`tel:${PHONE}`}
-              className="text-teal-400 hover:text-teal-300"
+              className="text-teal-600 hover:text-teal-700"
               aria-label="Phone"
               tabIndex={0}
             >
@@ -46,7 +46,7 @@ const Contact: React.FC = () => (
               href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-400 hover:text-teal-300"
+              className="text-teal-600 hover:text-teal-700"
               aria-label="GitHub"
               tabIndex={0}
             >
@@ -56,7 +56,7 @@ const Contact: React.FC = () => (
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-400 hover:text-teal-300"
+              className="text-teal-600 hover:text-teal-700"
               aria-label="LinkedIn"
               tabIndex={0}
             >
