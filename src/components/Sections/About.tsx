@@ -3,7 +3,7 @@ import React from 'react'
 const About: React.FC = () => (
   <section id="about" className="py-20 bg-gray-50">
     <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center text-teal-600">
+      <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">
         About Me
       </h2>
       <div className="max-w-3xl mx-auto">
@@ -15,7 +15,7 @@ const About: React.FC = () => (
           identifying and solving challenges for both domestic and international
           clients efficiently.
         </p>
-        <h3 className="text-2xl font-semibold mb-4 text-teal-600 text-left">
+        <h3 className="text-2xl font-semibold mb-4 text-blue-800 text-left">
           Summary of Skills
         </h3>
         <ul className="list-disc list-inside text-lg mb-6 text-gray-600 text-left">
@@ -45,7 +45,7 @@ const About: React.FC = () => (
             industry trends and best practices.
           </li>
         </ul>
-        <h3 className="text-2xl font-semibold mb-4 text-teal-600 text-left">
+        <h3 className="text-2xl font-semibold mb-4 text-blue-800 text-left">
           Strengths
         </h3>
         <ul className="list-disc list-inside text-lg text-gray-600 text-left">
